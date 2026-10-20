@@ -75,11 +75,13 @@ $skill-installer
 
 请从 https://github.com/dashuaige-cn/jd-project-examples 安装“修改简历”技能。
 技能位于仓库根目录，分支为 main。
-安装目录名使用 jd-project-examples，对应 --path . --name jd-project-examples。
+使用完整下载模式安装，参数为 --path . --name jd-project-examples --method download。
+私有仓库可复用本机已授权的 GitHub CLI 凭据，仅向安装子进程临时传递凭据，不打印或保存令牌。
+如果下载模式无法认证，请改用下方方法二的完整 Git 克隆，不要对仓库根目录进行稀疏克隆。
 如果已经安装，请先检查现有版本，不要直接覆盖我的本地改动。
 ```
 
-这里必须说明“仓库根目录”和安装目录名，因为 `SKILL.md` 直接位于仓库根目录，而非某个子文件夹。
+这里必须说明“仓库根目录”和安装目录名，因为 `SKILL.md` 直接位于仓库根目录，而非某个子文件夹。完整下载会同时保留 `agents/openai.yaml`；根目录稀疏克隆可能漏掉这个界面配置目录。
 
 安装后在下一条消息中调用 `$jd-project-examples`；如果技能仍未出现，重启 Codex 后再试。此方式使用的具体安装目录以安装器回执为准。
 
