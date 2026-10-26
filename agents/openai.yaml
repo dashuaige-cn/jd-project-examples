@@ -1,4 +1,4 @@
 interface:
   display_name: "修改简历"
-  short_description: "上传简历和招聘JD，推演两个落地项目并同步替换项目、工作与实习经历，交付岗位专版PDF"
-  default_prompt: "使用 $jd-project-examples 修改简历：根据我上传的基础简历和招聘JD，推演两个项目并写清技术栈、实现内容与核心技术作用，按已落地口径替换全部旧项目，同步改写工作、实习和技能，完成排版检查并交付PDF简历。"
+  short_description: "上传简历与招聘JD，同步改写项目、工作和实习，交付PDF、HR打招呼文案及完整简历长图"
+  default_prompt: "使用 $jd-project-examples 修改简历：根据基础简历和招聘JD组织两个落地项目，同步改写工作、实习和技能，完成排版检查，交付PDF简历、一条可直接复制的HR打招呼文案和包含全部页面的单张长图。"
